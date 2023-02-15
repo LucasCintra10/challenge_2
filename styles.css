@@ -1,0 +1,99 @@
+:root {
+    --cor-pagina: #141519;
+    --cor-card: #212832;
+    --cor-titulo: white;
+    --cor-desc: #9BA2AC;
+    --fonte-pagina: 'Overpass', sans-serif;
+}
+
+body {
+    background-color: var(--cor-pagina);
+    font-family: var(--fonte-pagina);
+}
+.rating__card {
+    width: 75vw;
+    margin: 40% auto;
+    background-color: var(--cor-card);
+    display: grid;
+    padding: 24px;
+    gap: 1.5em;
+    border-radius: 16px;
+}
+.rating__icon {
+    background-color: #282D30;
+    width: 22px;
+    padding: 6px;
+    text-align: center;
+    border-radius: 100%;
+}
+.rating__titulo {
+    color: var(--cor-titulo);
+    font-size: 24px;
+    font-weight: 700;
+}
+.rating__text {
+    color: var(--cor-desc);
+    font-size: 15px;
+    font-weight: 400;
+}
+.botao__container {
+    display: flex;
+    justify-content: space-between;
+}
+.rating__botao {
+    padding: 10px 15px;
+    border-radius: 100%;
+    color: var(--cor-desc);
+    font-weight: 400;
+    font-size: 15px;
+    background-color: #282D30;
+    border:  none;
+}
+.rating__botao:hover {
+    background-color: #FC7613;
+    color: white;
+}
+.rating__botao:focus {
+    background-color: #7C8898;
+    color: white;
+}
+.rating__botao-enviar {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #FC7613;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.rating__botao-enviar:hover {
+    background-color: white;
+    color: #FC7613;
+}
+.thankYou__card {
+    text-align: center;
+}
+.thankYou__image {
+    margin: 0 auto;
+}
+.thankYou__msg {
+    color: #FC7613;
+    background-color: #282D30;
+    border-radius: 20px;
+    padding: 8px;
+    font-size: 15px;
+    width: 70%;
+    margin: 0 auto; 
+}
+.desativado {
+    display: none;
+}
+
+@media screen and (min-width:1440px) {
+    .rating__card {
+        width: 18vw;
+        margin: 15% auto;
+    }
+}
